@@ -1,0 +1,17 @@
+package org.example;
+
+import com.google.gson.Gson;
+
+
+public class Main {
+    public static void main(String[] args)  {
+        Person person = new Person();
+        person.setName("Vlad");
+        person.setLastName("Pitsur");
+        Gson gson = new Gson();
+
+        String json = gson.toJson(person);
+
+        System.out.println(json);
+    }
+}
